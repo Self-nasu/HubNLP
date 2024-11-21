@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="HubNLP",  # Package name
-    version="0.1",  # Initial version
+    version="0.3",  # Initial version
     author="Self-nasu",
     author_email="nexiotech.2024@gmail.com",
     description="A simple NLP utility library",
@@ -16,4 +16,14 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",
+    install_requires=[
+        "numpy",
+        "pandas",
+        "sklearn-crfsuite",
+        "seqeval",
+        "datasets",
+        "transformers",
+        "torch",
+        "tf-keras",
+    ],
 )
